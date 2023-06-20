@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Click Coordinates</title>
+   
+  </head>
+  <body>
+    <script>
+      
+      function displayCoordinates(event) {
+        var x = event.clientX;
+        var y = event.clientY; 
+        alert("Clicked coordinates: (" + x + ", " + y + ")");
+      }
+
+      
+      document.addEventListener("click", displayCoordinates);
+    </script>
+  </body>
+</html>

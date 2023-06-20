@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="image-container">
+    <img src="original_image.jpg" alt="Original Image">
+    <img class="hover-image" src="hover_image.jpg" alt="Hover Image">
+  </div>
+
+  <script>
+    
+    var imageContainer = document.querySelector('.image-container');
+    var originalImage = imageContainer.querySelector('img');
+    var hoverImage = imageContainer.querySelector('.hover-image');
+
+    imageContainer.addEventListener('mouseover', function() {
+      originalImage.style.opacity = 0;
+      hoverImage.style.opacity = 1;
+    });
+
+    imageContainer.addEventListener('mouseout', function() {
+      originalImage.style.opacity = 1;
+      hoverImage.style.opacity = 0;
+    });
+  </script>
+</body>
+</html>
+
